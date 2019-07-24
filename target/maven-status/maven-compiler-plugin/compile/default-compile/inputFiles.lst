@@ -1,0 +1,8 @@
+/home/admin1/Desktop/Struts 2 Project/struts2/src/main/java/Dao/UserServiceDaoImpl.java
+/home/admin1/Desktop/Struts 2 Project/struts2/src/main/java/action/ForgotPasswordAction.java
+/home/admin1/Desktop/Struts 2 Project/struts2/src/main/java/action/RegisterAction.java
+/home/admin1/Desktop/Struts 2 Project/struts2/src/main/java/action/ResetPasswordAction.java
+/home/admin1/Desktop/Struts 2 Project/struts2/src/main/java/pojo/User.java
+/home/admin1/Desktop/Struts 2 Project/struts2/src/main/java/action/LoginAction.java
+/home/admin1/Desktop/Struts 2 Project/struts2/src/main/java/Utility/HibernateUtility.java
+/home/admin1/Desktop/Struts 2 Project/struts2/src/main/java/Dao/IUserServiceDao.java
