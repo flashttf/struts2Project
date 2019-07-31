@@ -2,7 +2,7 @@ package action;
 
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Result;
-import org.eclipse.jdt.internal.compiler.env.IModule.IService;
+
 
 import Dao.IUserServiceDao;
 import Dao.UserServiceDaoImpl;
@@ -12,18 +12,19 @@ import pojo.User;
 @Action(value="register",results = {@Result(name="success",location ="/login.jsp" ),
 		@Result(name = "failure",location = "/index.jsp")})
 public class RegisterAction {
-	String name;
+	String userName;
 	String phoneNumber;
 	String emailId;
 	String password;
 	
 	private IUserServiceDao userServiceDao=UserServiceDaoImpl.getInstance();
 	
-	public String getName() {
-		return name;
+	
+	public String getUserName() {
+		return userName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public String getPhoneNumber() {
 		return phoneNumber;
@@ -50,7 +51,7 @@ public class RegisterAction {
 	
 	public String execute() {
 		User user=new User();
-		user.setName(getName());
+		user.setUserName(getUserName());
 		user.setEmailId(getEmailId());
 		user.setPhoneNumber(getPhoneNumber());
 		user.setPassword(getPassword());

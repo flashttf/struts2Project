@@ -19,8 +19,8 @@ public class User {
 	@Column(name="Id")
 	private	long userId;
 	
-	@Column(name="name")
-	private	String name;
+	@Column(name="userName")
+	private	String userName;
 	
 	@Column(name="phoneNumber")
 	private	String phoneNumber;
@@ -39,12 +39,14 @@ public class User {
 		this.userId = userId;
 	}
 
-	public String getName() {
-		return name;
+	
+
+	public String getUserName() {
+		return userName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	public String getPhoneNumber() {
@@ -73,16 +75,20 @@ public class User {
 		this.password = password;
 	}
 
+	
+
 	@Override
 	public String toString() {
-		return "User [userId=" + userId + ", name=" + name + ", phoneNumber=" + phoneNumber + ", emailId=" + emailId
-				+ ", password=" + password + "]";
+		return "User [userId=" + userId + ", userName=" + userName + ", phoneNumber=" + phoneNumber + ", emailId="
+				+ emailId + ", password=" + password + "]";
 	}
 
-	public User(long userId, String name, String phoneNumber, String emailId, String password) {
-		
+	
+
+	public User(long userId, String userName, String phoneNumber, String emailId, String password) {
+	
 		this.userId = userId;
-		this.name = name;
+		this.userName = userName;
 		this.phoneNumber = phoneNumber;
 		this.emailId = emailId;
 		this.password = password;

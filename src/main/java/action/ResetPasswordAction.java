@@ -13,6 +13,7 @@ public class ResetPasswordAction {
 	}
 	
 	String execute() {
+		
 		return "success";
 	}
 }

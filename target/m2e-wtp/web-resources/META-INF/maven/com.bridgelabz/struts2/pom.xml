@@ -21,6 +21,13 @@
 			<version>2.5</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+<dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>mail</artifactId>
+    <version>1.4</version>
+</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-convention-plugin -->
 		<dependency>
 			<groupId>org.apache.struts</groupId>

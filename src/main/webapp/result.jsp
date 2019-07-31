@@ -7,6 +7,6 @@
 <title>Result Page</title>
 </head>
 <body>
-Hii<s:property value="userName"/>,It is a struts Application.
+Hii <s:property value="emailId"/>,It is a struts Application.
 </body>
 </html>
